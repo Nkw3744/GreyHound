@@ -1,1 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GreyHoundRacer_StageC_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            const int houndNo = 8;
+          
+            string[] houndName = new string [houndNo];
+
+            for (int i = 0; i < houndName.Length; i++) 
+            {
+                Console.Write("Name of Hound {0}: ", i+1);
+                houndName[i] = Console.ReadLine();
+            }
+
+            Console.WriteLine("Hound Names; ");
+
+            foreach (string Name in houndName) 
+            {
+                Console.WriteLine(Name); 
+            }
+            
+        }
+
+
+
+
+        
+    }
+}
 
